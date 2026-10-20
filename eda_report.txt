@@ -1,0 +1,52 @@
+THIRANEX INTERNSHIP — TASK 3: EXPLORATORY DATA ANALYSIS
+=====================================================
+Dataset: Synthetic illustrative retail-sales dataset; not official Thiranex data.
+Rows: 400
+Columns: 11
+Missing cells in original data: 7
+Duplicate rows: 0
+
+KEY FINDINGS (sample data only)
+Highest revenue category: Electronics (117,102.30)
+Highest revenue region: South (49,444.85)
+Highest revenue month: 2025-05 (21,567.52)
+Lowest revenue month: 2025-04 (7,446.80)
+Correlation between Revenue and Profit: 0.996
+
+STATISTICAL SUMMARY
+       Units_Sold  Unit_Price  Discount  Revenue     Cost  Profit  Customer_Count
+count      400.00      400.00    400.00   400.00   400.00  400.00          400.00
+mean         4.51      108.54      0.10   447.97   260.13  187.51            2.00
+std          2.26       86.04      0.07   475.36   301.15  175.41            0.84
+min          1.00       21.26      0.00    18.17     7.63   10.54            1.00
+25%          2.75       39.90      0.05   146.78    70.50   70.51            1.00
+50%          5.00       64.56      0.10   260.11   127.91  127.39            2.00
+75%          6.00      176.58      0.15   559.11   326.63  225.89            3.00
+max          8.00      306.94      0.20  2265.17  1404.41  860.76            3.00
+
+MISSING VALUES BY COLUMN
+Order_ID          0
+Order_Date        0
+Region            2
+Category          0
+Units_Sold        2
+Unit_Price        3
+Discount          0
+Revenue           0
+Cost              0
+Profit            0
+Customer_Count    0
+
+CORRELATION MATRIX
+                Units_Sold  Unit_Price  Discount  Revenue   Cost  Profit  Customer_Count
+Units_Sold           1.000       0.038     0.003    0.499  0.462   0.560          -0.047
+Unit_Price           0.038       1.000     0.018    0.793  0.812   0.758          -0.022
+Discount             0.003       0.018     1.000   -0.068 -0.059  -0.082          -0.026
+Revenue              0.499       0.793    -0.068    1.000  0.999   0.996          -0.043
+Cost                 0.462       0.812    -0.059    0.999  1.000   0.991          -0.039
+Profit               0.560       0.758    -0.082    0.996  0.991   1.000          -0.048
+Customer_Count      -0.047      -0.022    -0.026   -0.043 -0.039  -0.048           1.000
+
+LIMITATIONS
+These are synthetic sample records. Correlation does not prove causation.
+Replace this dataset with the official internship dataset if one was provided.
